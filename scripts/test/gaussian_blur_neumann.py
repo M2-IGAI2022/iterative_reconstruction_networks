@@ -2,17 +2,17 @@ import torch
 import os
 import random
 import sys
-sys.path.append('../iterative_reconstruction_networks-main')
+sys.path.append('../iterative_reconstruction_networks')
 import torch.nn as nn
 import torch.optim as optim
 from torchvision import transforms
 
-import operators.blurs as blurs
-from operators.operator import OperatorPlusNoise
-from utils.celeba_dataloader import CelebaTrainingDatasetSubset, CelebaTestDataset
-from networks.u_net import UnetModel
-from solvers.neumann import NeumannNet
-from testing import standard_testing
+import src.blurs as blurs
+from src.operator import OperatorPlusNoise
+from src.utils.celeba_dataloader import CelebaTrainingDatasetSubset, CelebaTestDataset
+from src.u_net import UnetModel
+from src.neumann import NeumannNet
+from src import standard_testing
 
 # Parameters to modify
 n_epochs = 80
@@ -26,13 +26,13 @@ initial_eta = 0.1
 
 # point this towards your celeba files
 # data_location = "teeth_pics"
-data_location = "celeba/img_align_celeba/"
+data_location = "data/databases/celeba/img_align_celeba/"
 
 kernel_size = 5
 noise_sigma = 0.01
 
 # modify this for your machine
-save_location = "data/gaussianblur_neumann.ckpt"
+save_location = "data/save/celeba/gaussianblur_neumann.ckpt"
 
 gpu_ids = []
 for ii in range(6):

@@ -1,6 +1,6 @@
 import torch.nn as nn
 import torch
-from solvers.cg_utils import conjugate_gradient
+from src.cg_utils import conjugate_gradient
 
 class NeumannNet(nn.Module):
     def __init__(self, linear_operator, nonlinear_operator, eta_initial_val=0.1):

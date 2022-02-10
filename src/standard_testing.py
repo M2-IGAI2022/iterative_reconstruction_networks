@@ -1,7 +1,7 @@
 import torch
 import numpy as np
-from utils.testing_utils import save_batch_as_color_imgs 
-from utils.testing_utils import save_tensor_as_color_img
+from src.utils.testing_utils import save_batch_as_color_imgs 
+from src.utils.testing_utils import save_tensor_as_color_img
 
 def test_solver(solver, test_dataloader,
                  measurement_process, device='cpu'):
