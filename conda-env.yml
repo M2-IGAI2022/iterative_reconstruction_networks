@@ -1,0 +1,12 @@
+name: neumaNN_env
+channels:
+  - defaults
+dependencies:
+  - opencv
+  - matplotlib
+  - torchvision
+  - torchaudio
+  - pytorch
+  - cudatoolkit=10.2
+  - imageio
+prefix: /home/seb2s/anaconda3/envs/neumaNN_env
