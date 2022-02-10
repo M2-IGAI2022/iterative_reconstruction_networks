@@ -7,6 +7,10 @@ __pycache__/
 # C extensions
 *.so
 
+# Dataset
+data/databases/celeba/img_align_celeba
+data/databases/teeth/img_align_teeth
+
 # Distribution / packaging
 .Python
 build/
