@@ -1,4 +1,4 @@
-# iterative_reconstruction_networks
+# Iterative reconstruction networks
 
 
 **[Paper](https://arxiv.org/abs/1901.03707)** | **[Video Tutorials](https://www.youtube.com/watch?v=IMnjiYyHnpg)** | **[Master Degree website](https://departement-informatique.univ-tlse3.fr/master-igai/)** 
@@ -6,15 +6,8 @@
 **This project** is forked from [dgilton's repository](https://github.com/dgilton/iterative_reconstruction_networks). 
 
 
-
-
-
-
-
-
-
 ## Getting Started 
-### Set the conda environnement
+#### Set the conda environnement
 
 Or you can install packages manually
 
@@ -22,7 +15,7 @@ Or you can install packages manually
 $ conda env create --file conda-env.yml 
 $ conda activate neumaNN_env
 ```
-### Download the dataset
+#### Download the dataset
 
 ```bash
 $ ./scripts/download_celeba.sh
@@ -45,9 +38,8 @@ $ python scripts/test/gaussian_blur_neumann.py
 <img src="results/examples/0.0010424589_out.png" alt="drawing" height="200"/>
 
 
-## License
+## Contributors
 
-Created at University Paul Sabatier III by : 
 * https://github.com/Aclardgm
 * https://github.com/seb2s
 
